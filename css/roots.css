@@ -1,0 +1,22 @@
+:root {
+    --bg-main: #f5f3ef;
+    --text-main: #0f0f0f;
+    --text-muted: #6b6b6b;
+    --accent: #9c6b3d;
+    --border-soft: #e3dfd8;
+
+    --coffee-cream:   #f4efe9; 
+    --coffee-milk:    #e6ded4; 
+    --coffee-light:   #cbb8a9; 
+    --coffee-medium:  #a7896d; 
+    --coffee-dark:    #5f4633; 
+    --coffee-black:   #2b1e16; 
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+}
+

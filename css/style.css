@@ -1,0 +1,18 @@
+/* Generic container */
+.container {
+    margin: auto;
+    padding-inline: var(--container-padding);
+    width: 90%;
+}
+
+/* /* Header container */ */
+/* .container--header { */
+/*     max-width: var(--container-header); */
+/* } */
+/**/
+/* /* Body / content container */ */
+/* .container--content { */
+/*     max-width: var(--container-content); */
+/* } */
+/**/
+/**/

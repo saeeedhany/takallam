@@ -1,0 +1,111 @@
+/* Mobile - Small phones */
+@media (max-width: 480px) {
+}
+
+/* Mobile - Large phones */
+@media (max-width: 640px) {
+}
+
+/* Tablet - Portrait */
+@media (max-width: 868px) {
+    .hero-content .content {
+        display: block;
+        width: 90vw;
+        height: 150vh;
+    }
+
+    .hero-content .left-content h1 {
+        font-size: 100px;
+        color: var(--coffee-dark);
+        text-align: center;
+    }
+
+    .hero-content .left-content h1 span {
+        padding-right: 0px;
+    }
+
+    .hero-content .right-content .desc {
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero-content .right-content .desc p {
+        line-height: 1.7;
+        font-size: 22px;
+    }
+
+    .hero-content .right-content .desc p:first-child{
+        font-family: "Reem Kufi", sans-serif;
+        background-image: url(../assets/images/background.jpg);
+        font-size: 55px;
+        text-align: center;
+        padding: 7px 0;
+        margin-bottom: 10px
+    }
+
+    .hero-content .right-content .desc p:nth-child(2){
+        padding-bottom: 40px;
+    }
+}
+
+/* Tablet - Landscape */
+@media (max-width: 1024px) {
+}
+
+/* Laptop / Small desktop */
+@media (max-width: 1380px) {
+    .hero-content .content {
+        display: block;
+        width: 90vw;
+        height: 150vh;
+    }
+
+    .hero-content .left-content h1 {
+        font-size: 100px;
+        color: var(--coffee-dark);
+        text-align: center;
+    }
+
+    .hero-content .left-content h1 span {
+        padding-right: 0px;
+    }
+
+    .hero-content .right-content .desc {
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero-content .right-content .desc p {
+        line-height: 1.7;
+        font-size: 25px;
+    }
+
+    .hero-content .right-content .desc p:first-child{
+        font-family: "Reem Kufi", sans-serif;
+        background-image: url(../assets/images/background.jpg);
+        font-size: 55px;
+        text-align: center;
+        padding: 7px 0;
+        margin-bottom: 10px
+    }
+
+    .hero-content .right-content .desc p:nth-child(2){
+        padding-bottom: 40px;
+    }
+
+}
+
+/* Large desktop */
+@media (min-width: 1536px) {
+
+
+}
+
