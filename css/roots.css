@@ -11,12 +11,15 @@
     --coffee-medium:  #a7896d; 
     --coffee-dark:    #5f4633; 
     --coffee-black:   #2b1e16; 
+    --coffee-dark-rgba:  rgba(95, 70, 51, 0.4); 
 
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 2rem;
     --space-lg: 4rem;
     --space-xl: 6rem;
+
+    --top-section-margin: 100px;
 
 }
 

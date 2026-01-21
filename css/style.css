@@ -5,11 +5,11 @@
     width: 90%;
 }
 
-/* /* Header container */ */
-/* .container--header { */
-/*     max-width: var(--container-header); */
-/* } */
-/**/
+/* Header container */
+.container--header {
+    max-width: 70%;
+}
+
 /* /* Body / content container */ */
 /* .container--content { */
 /*     max-width: var(--container-content); */

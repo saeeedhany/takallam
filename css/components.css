@@ -139,6 +139,61 @@ main {
 }
 
 .second-section {
+    margin-top: var(--top-section-margin);
+    height: 400px;
+}
+
+.second-section .sec-section-content .sec-content .noted {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.second-section .sec-section-content .sec-content .noted .right-parag {
+    width: 50%;
+    font-size: 25px;
+    /* border: 1px solid black; */
+    padding: 50px 50px;
+}
+
+.second-section .sec-section-content .sec-content .noted .right-parag .nested-a {
+    display: block;
+    position: relative;
+    top: 30px;
+    color: var(--coffee-dark);
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    width: fit-content;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease;
+}
+
+.second-section .sec-section-content .sec-content .noted .right-parag .nested-a:hover {
+    background-size: 100% 2px;
+}
+
+.second-section .sec-section-content .sec-content .noted .left-title {
+    color: var(--coffee-dark);
+    font-size: 150px;
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+.second-section .sec-section-content .sec-content .noted .left-title .word-one {
+    
+}
+
+hr {
+    
+}
+
+.third-section {
+    margin-top: var(--top-section-margin);
     height: 500px;
 }
+
+
+
 

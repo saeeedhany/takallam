@@ -1,0 +1,33 @@
+.reveal {
+    --duration: 0.6s;
+    --delay: 0;
+    --easing: cubic-bezier(0.22, 1, 0.36, 1); /* smooth */
+
+    opacity: 0;
+    transition:
+        opacity var(--duration) var(--easing) var(--delay),
+        transform var(--duration) var(--easing) var(--delay);
+}
+
+.reveal[data-reveal="fade-up"] {
+    transform: translateY(20px);
+}
+
+.reveal[data-reveal="fade-in"] {
+    transform: none;
+}
+
+.reveal[data-reveal="slidee-inline"] {
+    transform: translateX(20px);
+}
+
+.reveal[data-reveal="slide-inline"] {
+    transform: translateX(-20px);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+
