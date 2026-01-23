@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,20 +38,29 @@
             <nav>
                 <div class="container container--header">
                     <div class="nav-content">
+                        <button class="hamburger" id="hamburger" aria-label="القائمة">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
                         <div class="right">
                             <p>سعيد</p>
                         </div>
-                        <div class="middle">
-                            <ul class="ul">
-                                <li><a href="#">الرئيسية</a></li>
-                                <li><a href="#">المدونة</a></li>
-                                <li><a href="#">المعرض</a></li>
-                            </ul>
-                        </div>
-                        <div class="left">
-                            <ul class="ul">
-                                <li><a href="#"><span>Github</span><i class="fa-brands fa-github"></i></a></li>
-                            </ul>
+
+                        <div class="nav-menu" id="navMenu">
+                            <div class="middle">
+                                <ul class="ul">
+                                    <li><a href="#">الرئيسية</a></li>
+                                    <li><a href="#">المدونة</a></li>
+                                    <li><a href="#">المعرض</a></li>
+                                </ul>
+                            </div>
+                            <div class="left">
+                                <ul class="ul">
+                                    <li><a href="#"><span>Github</span><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -102,7 +111,7 @@
                                 <span class="streamline--star-2-solid"></span>
                                 <p class="right-parag">
                                     هُنا لا أتكلمُ عن نفسي ولا أذكر ال "أنا" فأنا لست أحداً، ما "هو" إلا مجرد صوتٍ شغوفٍ بالحديث عَمَّا يحب، ليس بالضرورةِ ان يكونَ الأمر مقتصراً على التقنيه، اجل هو شغوفٌ بهذا ويُحِبه أكثر من كُلِّ شيء، ولكن ليس الأمر هكذا، ف "هو" لم يجد مكانا يشبهه فقرر أن يصنعه بِحُب بشيءٍ يُحِب.
-                                <a class="nested-a" href="philosophy.html">إقرأ أكثر لتعرف الغرض وراء كُلِّ هذا <i class="fa-solid fa-arrow-left-long" style="font-size: 15px"></i></a>
+                                    <a class="nested-a" href="philosophy.html">إقرأ أكثر لتعرف الغرض وراء كُلِّ هذا</a>
                                 </p>
                                 <p class="left-title reveal" data-reveal="slide-inline" style="--delay: 0s;--duration: 2s">
                                     <span class="word-one">جديرٌ</span> <span class="word-two">بالذِّكر</span>
@@ -115,19 +124,229 @@
 
             </section>
 
-            <hr class="container container--header line">
-            
             <section class="third-section">
 
                 <div class="third-section-content">
                     <div class="container container--header">
-                        <div class="thir-content">
+
+                        <div class="editorial-grid">
+
+                            <div class="editorial-intro reveal" data-reveal="slidee-inline" style="--delay: 0s;--duration: 2s">
+                                <span class="section-label">المدونة</span>
+                                <h2>مقالات مختارة</h2>
+
+                                <p class="featured-title">
+                                    نظرة عامة على أفكاري وتجربتي خلال العام
+                                </p>
+
+                                <a href="#" class="read-more link-underline"><i class="fa-solid fa-mug-hot"></i> اقرأ المزيد</a>
+                            </div>
+
+                            <div class="editorial-carousel reveal" data-reveal="fade-in" style="--delay: 0s;--duration: 2s">
+
+                                <div class="carousel-nav">
+                                    <button class="nav-btn prev">‹</button>
+                                    <button class="nav-btn next">›</button>
+                                </div>
+
+                                <div class="carousel-track" id="carouselTrack">
+
+                                    <article class="article-card">
+                                        <div class="card-image">
+                                            <a href="#">
+                                                <img src="assets/images/vagabond.jpg" alt="مقال عن التطوير الذاتي">
+                                                <h3>رحلة التعلم المستمر</h3>
+                                            </a>
+                                        </div>
+                                        <p class="card-desc">كيف غيرت عادة القراءة اليومية حياتي بشكل جذري</p>
+                                    </article>
+
+                                    <article class="article-card">
+                                        <div class="card-image">
+                                            <a href="#">
+                                                <img src="assets/images/vagabond.jpg" alt="مقال عن البرمجة">
+                                                <h3>فن كتابة الكود النظيف</h3>
+                                            </a>
+                                        </div>
+                                        <p class="card-desc">دروس تعلمتها من سنوات من البرمجة والتجربة</p>
+                                    </article>
+
+                                    <article class="article-card">
+                                        <div class="card-image">
+                                            <a href="#">
+                                                <img src="assets/images/vagabond.jpg" alt="مقال عن الإنتاجية">
+                                                <h3>إدارة الوقت بحكمة</h3>
+                                            </a>
+                                        </div>
+                                        <p class="card-desc">استراتيجيات عملية لتحقيق التوازن بين العمل والحياة</p>
+                                    </article>
+
+                                    <article class="article-card">
+                                        <div class="card-image">
+                                            <a href="#">
+                                                <img src="assets/images/vagabond.jpg" alt="مقال عن التفكير">
+                                                <h3>قوة التأمل والتفكر</h3>
+                                            </a>
+                                        </div>
+                                        <p class="card-desc">لماذا نحتاج إلى وقت للصمت في عالم مليء بالضجيج</p>
+                                    </article>
+
+                                    <article class="article-card">
+                                        <div class="card-image">
+                                            <a href="#">
+                                                <img src="assets/images/vagabond.jpg" alt="مقال عن الإبداع">
+                                                <h3>إطلاق العنان للإبداع</h3>
+                                            </a>
+                                        </div>
+                                        <p class="card-desc">كيف تجد مصدر إلهامك وتحافظ عليه حياً</p>
+                                    </article>
+
+                                </div>
+                            </div>
 
                         </div>
+
                     </div>
                 </div>
 
             </section>
+
+            <section class="horizontal-section">
+                <div class="container container--header">
+
+                    <div class="section-header">
+                        <h2>رسائل مني، إليك</h2>
+
+                        <div class="nav-buttons">
+                            <button class="nav-btn prev" data-prev>‹</button>
+                            <button class="nav-btn next" data-next>›</button>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-track">
+
+                        <article class="article-card">
+                            <div class="card-image">
+                                <img src="assets/images/vagabond.jpg" alt="">
+                                <span class="card-overlay">
+                                    رسائل إليك،<br>مني #8
+                                </span>
+                            </div>
+
+                            <h3 class="card-title">إليك، مني #8</h3>
+                            <p class="card-desc">
+                                وبينما نختتم العام، أرى أنه لا يوجد وقت أفضل من هذا...
+                            </p>
+                            <a href="#" class="read-more">اقرأ المزيد ←</a>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="card-image">
+                                <img src="assets/images/vagabond.jpg" alt="">
+                                <span class="card-overlay">
+                                    رسائل إليك،<br>مني #7
+                                </span>
+                            </div>
+
+                            <h3 class="card-title">إليك، مني #7</h3>
+                            <p class="card-desc">
+                                في هذه الأيام، أجد نفسي أفكر في معنى التغيير الحقيقي...
+                            </p>
+                            <a href="#" class="read-more">اقرأ المزيد ←</a>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="card-image">
+                                <img src="assets/images/vagabond.jpg" alt="">
+                                <span class="card-overlay">
+                                    رسائل إليك،<br>مني #6
+                                </span>
+                            </div>
+
+                            <h3 class="card-title">إليك، مني #6</h3>
+                            <p class="card-desc">
+                                أحياناً نحتاج أن نتوقف ونتأمل في المسار الذي نسير فيه...
+                            </p>
+                            <a href="#" class="read-more">اقرأ المزيد ←</a>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="card-image">
+                                <img src="assets/images/vagabond.jpg" alt="">
+                                <span class="card-overlay">
+                                    رسائل إليك،<br>مني #5
+                                </span>
+                            </div>
+
+                            <h3 class="card-title">إليك، مني #5</h3>
+                            <p class="card-desc">
+                                الحياة ليست سباقاً، بل رحلة نتعلم فيها شيئاً جديداً كل يوم...
+                            </p>
+                            <a href="#" class="read-more">اقرأ المزيد ←</a>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="card-image">
+                                <img src="assets/images/vagabond.jpg" alt="">
+                                <span class="card-overlay">
+                                    رسائل إليك،<br>مني #4
+                                </span>
+                            </div>
+
+                            <h3 class="card-title">إليك، مني #4</h3>
+                            <p class="card-desc">
+                                هناك لحظات في حياتنا تغيرنا إلى الأبد، وهذه إحداها...
+                            </p>
+                            <a href="#" class="read-more">اقرأ المزيد ←</a>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="card-image">
+                                <img src="assets/images/vagabond.jpg" alt="">
+                                <span class="card-overlay">
+                                    رسائل إليك،<br>مني #3
+                                </span>
+                            </div>
+
+                            <h3 class="card-title">إليك، مني #3</h3>
+                            <p class="card-desc">
+                                كلما تقدمنا في العمر، ندرك أن السعادة في الأشياء البسيطة...
+                            </p>
+                            <a href="#" class="read-more">اقرأ المزيد ←</a>
+                        </article>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <footer>
+                <div class="container container--header">
+                    <div class="footer-content">
+
+                        <div class="footer-main">
+                            <h3>لنبقَ على تواصل</h3>
+                            <p class="footer-desc">هل لديك فكرة أو مشروع؟ أو تريد فقط أن تقول مرحباً؟</p>
+
+                            <a href="mailto:alsaeedalbasi0ny@gmail.com" class="email-link">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>راسلني</span>
+                            </a>
+                        </div>
+
+                        <div class="footer-bottom">
+                            <p class="copyright">© 2025 سعيد. جميع الحقوق محفوظة.</p>
+
+                            <div class="social-links">
+                                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
 
         </main>
 
