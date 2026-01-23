@@ -87,6 +87,11 @@
     gap: 50px;
 }
 
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-content {
@@ -478,9 +483,237 @@ main {
     margin: 0;
 }
 
-.nav-buttons {
+.gallery-section {
+    margin-top: 100px;
+    padding: 60px 0;
+    
+}
+
+.gallery-container {
     display: flex;
-    gap: 12px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Gallery Grid Box (Right Side - takes more space) */
+.gallery-grid-box {
+    flex: 0 0 60%;
+}
+
+.gallery-title {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-size: 1.3rem;
+    color: var(--coffee-dark);
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Content Slider (Left Side - smaller) */
+.gallery-content {
+    flex: 1;
+}
+
+.section-title {
+    font-family: "Aref Ruqaa Ink", serif;
+    font-size: 1.3rem;
+    color: var(--coffee-dark);
+    margin-bottom: 20px;
+}
+
+.content-carousel {
+    position: relative;
+}
+
+.content-track {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-left: 5px;
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--coffee-light) transparent;
+}
+
+.content-track::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-track::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content-track::-webkit-scrollbar-thumb {
+    background: var(--coffee-light);
+    border-radius: 3px;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover .content-image img {
+    transform: scale(1.05);
+}
+
+.content-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--coffee-dark);
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.content-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.content-nav {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .gallery-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .gallery-grid-box {
+        flex: 1;
+        width: 100%;
+    }
+    
+    .gallery-content {
+        width: 100%;
+    }
+    
+    .content-track {
+        flex-direction: row;
+        max-height: none;
+        overflow-y: hidden;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    
+    .content-track::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .content-card {
+        flex: 0 0 280px;
+    }
+    
+    .content-nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    
+    .content-nav .nav-btn {
+        width: 38px;
+        height: 38px;
+        border: 2px solid var(--coffee-dark);
+        color: var(--coffee-dark);
+        background: transparent;
+        cursor: pointer;
+        font-size: 1.4rem;
+        line-height: 1;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .content-nav .nav-btn:hover {
+        background: var(--coffee-dark);
+        color: var(--bg-main);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-section {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+    
+    .gallery-title,
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    
+    .content-card {
+        flex: 0 0 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-title,
+    .section-title {
+        font-size: 1.1rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .content-card {
+        flex: 0 0 200px;
+    }
+    
+    .content-title {
+        font-size: 0.95rem;
+    }
 }
 
 .horizontal-track {
