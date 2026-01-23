@@ -32,7 +32,11 @@
 .nav-content .left ul li a {
     color: var(--text-main);
     font-weight: bold;
+}
+
+.nav-content .left ul li a {
     background-color: var(--coffee-light);
+    color: var(--bg-main);
     border-radius: 17px;
     padding: 7px 10px;
     transition: 0.3s all ease-out;
@@ -563,11 +567,16 @@ main {
     font-weight: 600;
     color: var(--coffee-dark);
     text-decoration: none;
-    transition: 0.3s all ease-in-out;
+    
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease;
 }
 
 .horizontal-section .read-more:hover {
-    color: var(--coffee-light)
+    background-size: 100% 2px;
 }
 
 .nav-btn {
@@ -632,10 +641,10 @@ footer {
     align-items: center;
     gap: 12px;
     padding: 14px 32px;
-    background-color: var(--coffee-light);
-    color: var(--coffee-dark);
-    /* border: 2px solid var(--coffee-dark); */
-    border-radius: 17px;
+    background-color: var(--coffee-dark);
+    color: var(--bg-main);
+    border: 2px solid var(--coffee-dark);
+    border-radius: 8px;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
@@ -643,8 +652,8 @@ footer {
 }
 
 .email-link:hover {
-    background-color: var(--coffee-dark);
-    color: var(--bg-main);
+    background-color: var(--bg-main);
+    color: var(--coffee-dark);
 }
 
 .email-link i {
@@ -675,8 +684,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid var(--coffee-dark); */
-    background-color: var(--coffee-light);
+    border: 2px solid var(--coffee-dark);
     border-radius: 50%;
     color: var(--coffee-dark);
     text-decoration: none;
