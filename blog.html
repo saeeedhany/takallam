@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>المدونة - سعيد</title>
+        <meta name="description" content="واجهة عربية معاصرة بهوية ثقافية" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/blog.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/query.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/roots.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <script src="js/main.js" defer></script>
+        <script src="js/blog.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="container container--header">
+                    <div class="nav-content">
+                        <button class="hamburger" id="hamburger" aria-label="القائمة">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <div class="right">
+                            <p>سعيد</p>
+                        </div>
+
+                        <div class="nav-menu" id="navMenu">
+                            <div class="middle">
+                                <ul class="ul">
+                                    <li><a href="#">الرئيسية</a></li>
+                                    <li><a href="#">المدونة</a></li>
+                                    <li><a href="#">المعرض</a></li>
+                                </ul>
+                            </div>
+                            <div class="left">
+                                <ul class="ul">
+                                    <li><a href="#"><span>Github</span><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </header>
+
+        <!-- Blog Page Hero -->
+        <section class="blog-hero">
+            <div class="blog-hero-content">
+                <h1 class="blog-hero-title">على حِسب وداد قلبي يابوي</h1>
+                <p class="blog-hero-description">
+                    لم يحتج الأمر كثيراً حتى أدرك ان الكلام الكثير والتعبير المبالغ فيه والشغف تجاه التفاصيل المهملة هي أشياء تُعَرِّفُ شخصيتي، فأنا شخصٌ كلوم!
+                </p>
+                <p class="blog-hero-description">
+                    ولكن بقدر كونِ تلك الصفات شيئاً مميزاً إلا أن الأمور لم تكن بتلك السلاسة والسهوله.. لذا وجدت ملاذي فى الكتابه
+                </p>
+                <p class="blog-hero-note">
+                     وهُنا تكمن تِلك الكتابات.
+                </p>
+            </div>
+        </section>
+
+        <div class="blog-filters">
+
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="philosophy">فلسفة</button>
+                <button class="filter-btn" data-filter="personal">شخصي</button>
+                <button class="filter-btn" data-filter="letters">رسائل</button>
+                <button class="filter-btn" data-filter="travel">سفر</button>
+            </div>
+
+        </div>
+
+
+        <!-- Blog Categories Container -->
+        <main class="blog-container">
+            
+            <!-- Category 1: "The One Where" Blog -->
+            <section class="blog-category">
+                <div class="category-header">
+                    <h2 class="category-title">هيا الدُنيا إيه غير زيرو و واحد؟</h2>
+                </div>
+
+                <div class="blog-grid" id="category-1-grid">
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One About the Lord of the Rings">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One About the Lord of the Rings</h3>
+                                <p class="blog-card-excerpt">هذا عن الوقت الذي أردت فيه أن أفكك الحياة، أو أفكك شيئاً...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٥/٢٢/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">فلسفة</span>
+                                        <span class="tag">سينما</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One With the Identity Crisis">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One With the Identity Crisis</h3>
+                                <p class="blog-card-excerpt">بناءً على مجلاتي الابتدائية وأواجه بجدية أزمة الهوية...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٥/٢٢/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">شخصي</span>
+                                        <span class="tag">تأمل</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One About Nani and My Mom">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One About Nani and My Mom</h3>
+                                <p class="blog-card-excerpt">لعيد الأم. هذا يدور حول أمي ووالدتها...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٥/١٣/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">عائلة</span>
+                                        <span class="tag">ذكريات</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One With the 91 Freeway">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One With the 91 Freeway</h3>
+                                <p class="blog-card-excerpt">هذا يدور حول رحلتي إلى الساحل الجنوبي لكاليفورنيا...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٥/٦/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">سفر</span>
+                                        <span class="tag">تأمل</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Hidden Posts -->
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One About Dreams">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One About Dreams</h3>
+                                <p class="blog-card-excerpt">تأملات حول الأحلام والطموحات والرحلة نحو تحقيقها...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٤/٢٨/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">تأمل</span>
+                                        <span class="tag">أحلام</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One With the Coffee Shop">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One With the Coffee Shop</h3>
+                                <p class="blog-card-excerpt">قصة عن مقهى صغير وذكريات جميلة...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٤/١٥/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">ذكريات</span>
+                                        <span class="tag">قهوة</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One About Friendship">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One About Friendship</h3>
+                                <p class="blog-card-excerpt">الصداقة الحقيقية ومعناها في حياتنا...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٤/٨/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">صداقة</span>
+                                        <span class="tag">علاقات</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="The One With the Sunset">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">The One With the Sunset</h3>
+                                <p class="blog-card-excerpt">تأملات أمام غروب الشمس الجميل...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٣/٢٥/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">طبيعة</span>
+                                        <span class="tag">تأمل</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <button class="show-more-btn" data-category="category-1-grid">
+                    <span class="btn-text-more">عرض المزيد</span>
+                    <span class="btn-text-less">عرض أقل</span>
+                </button>
+            </section>
+
+            <!-- Category 2: "Letters From Me, To You" Blog -->
+            <section class="blog-category">
+                <div class="category-header">
+                    <h2 class="category-title">هُنا يعيش الأنا</h2>
+                </div>
+
+                <div class="blog-grid" id="category-2-grid">
+                    <article class="blog-card">
+                        <a href="blog/philosophy.html" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/vagabond.jpg" alt="To You, From Me #8">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">مقدمة ابن سعدون</h3>
+                                <p class="blog-card-excerpt">دي أول مقاله أنشرها هنا، فحابب انها تكون مميزه شويه...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٢٢/١</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">نداء الطبيعه</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="To You, From Me #7">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">To You, From Me #7</h3>
+                                <p class="blog-card-excerpt">رسالة أخرى من القلب تحمل أفكاري وتأملاتي...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٨/١٨/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رسائل</span>
+                                        <span class="tag">تأمل</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="Dear Kobe: It's Me, Again">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">Dear Kobe: It's Me, Again</h3>
+                                <p class="blog-card-excerpt">رسالة إلى كوبي براينت، أسطورة كرة السلة...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٨/١١/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رياضة</span>
+                                        <span class="tag">إلهام</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="Dear Kobe">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">Dear Kobe</h3>
+                                <p class="blog-card-excerpt">أكتب هذا أيضاً بعد قراءة قصائد طويلة من براينت...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٨/٤/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رياضة</span>
+                                        <span class="tag">شعر</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Hidden Posts -->
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="To You, From Me #6">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">To You, From Me #6</h3>
+                                <p class="blog-card-excerpt">رسالة عن الشجاعة والتغيير والنمو الشخصي...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٧/٢٨/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رسائل</span>
+                                        <span class="tag">نمو</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="To You, From Me #5">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">To You, From Me #5</h3>
+                                <p class="blog-card-excerpt">تأملات حول الوقت وكيف نستخدمه في حياتنا...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٧/١٤/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رسائل</span>
+                                        <span class="tag">وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="To You, From Me #4">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">To You, From Me #4</h3>
+                                <p class="blog-card-excerpt">رسالة عن الأمل والإيمان بالمستقبل...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٧/٧/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رسائل</span>
+                                        <span class="tag">أمل</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="To You, From Me #3">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">To You, From Me #3</h3>
+                                <p class="blog-card-excerpt">رسالة عن الحب والعلاقات الإنسانية...</p>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٦/٣٠/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">رسائل</span>
+                                        <span class="tag">حب</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <button class="show-more-btn" data-category="category-2-grid">
+                    <span class="btn-text-more">عرض المزيد</span>
+                    <span class="btn-text-less">عرض أقل</span>
+                </button>
+            </section>
+
+            <!-- Category 3: "On My Radar" Blog -->
+            <section class="blog-category">
+                <div class="category-header">
+                    <h2 class="category-title">حيثُ يرقد "الأثر"</h2>
+                </div>
+
+                <div class="blog-grid blog-grid--circular" id="category-3-grid">
+                    <article class="blog-card blog-card--circular">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/characters/ayman.png" alt="February 2019">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">م/ أيمن عبد الرحيم</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">null/١٩</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">آثار</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/characters/anahr.png" alt="January 2019">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">أحمد الحسيني</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">null/١٩</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">آثار</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/characters/mmatallah.jpg" alt="December 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">محمد عطالله</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">null/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">آثار</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/characters/tdavis.jpg" alt="November 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">تيري ديڤيس</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">null/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">آثار</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="October 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">October 2018</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">١٠/٣١/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">yet</span>
+                                        <span class="tag">nothing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Hidden Posts -->
+                    <article class="blog-card blog-card--circular hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="September 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">September 2018</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٩/٣٠/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">موسيقى</span>
+                                        <span class="tag">شهري</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="August 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">August 2018</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٨/٣١/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">موسيقى</span>
+                                        <span class="tag">شهري</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="July 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">July 2018</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٧/٣١/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">موسيقى</span>
+                                        <span class="tag">شهري</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="June 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">June 2018</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٦/٣٠/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">موسيقى</span>
+                                        <span class="tag">شهري</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-card--circular hidden-post">
+                        <a href="#" class="blog-card-link">
+                            <div class="blog-card-image blog-card-image--circular">
+                                <img src="assets/images/blogimgs/Ola.jpg" alt="May 2018">
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">May 2018</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-card-date">٥/٣١/١٨</span>
+                                    <div class="blog-card-tags">
+                                        <span class="tag">موسيقى</span>
+                                        <span class="tag">شهري</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <button class="show-more-btn" data-category="category-3-grid">
+                    <span class="btn-text-more">عرض المزيد</span>
+                    <span class="btn-text-less">عرض أقل</span>
+                </button>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container container--header">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <h3>لنبقَ على تواصل</h3>
+                        <p class="footer-desc">متيجي يعمنا نشرب قهوه ف حته بعيده!</p>
+                        <a href="mailto:alsaeedalbasi0ny@gmail.com" class="email-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>راسلني</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">© 2025 سعيد. جميع الحقوق محفوظة.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/saeeedhany" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

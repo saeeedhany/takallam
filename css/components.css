@@ -168,7 +168,7 @@
 }
 
 main {
-    height: 90vh;
+    min-height: 90vh;
 }
 
 .blur-bottom {
@@ -197,12 +197,12 @@ main {
 .hero-content .content {
     display: flex;
     justify-content: space-evenly;
-    height: 95vh;
+    min-height: 95vh;
     /* border: 1px solid black; */
 }
 
 .hero-content .left-content h1 {
-    font-size: 150px;
+        font-size: clamp(48px, 12vw, 150px);
     color: var(--coffee-dark);
     position: relative;
     top: 130px;

@@ -1,4 +1,11 @@
+/* Hero Section Responsive */
 @media (max-width: 1024px) {
+
+    .gallery-grid-box {
+        flex: 1;
+        width: 100%;
+    }
+
     .hero-content .content {
         flex-direction: column;
         height: auto;
@@ -101,12 +108,13 @@
     }
 }
 
-/* Second Section Responsive */
-@media (max-width: 1524px) {
+/* Second Section Responsive - FIXED BREAKPOINT */
+@media (max-width: 1350px) {
     .second-section {
         height: auto;
         margin-bottom: 60px;
     }
+    
     .second-section .sec-section-content .sec-content .noted {
         flex-direction: column;
         gap: 30px;
@@ -114,7 +122,7 @@
 
     .second-section .sec-section-content .sec-content .noted .right-parag {
         width: 100%;
-        padding: 65px 10px;
+        padding: 50px 20px;
     }
 
     .second-section .sec-section-content .sec-content .noted .left-title {
@@ -132,8 +140,7 @@
 
     .second-section .sec-section-content .sec-content .noted .right-parag {
         font-size: 20px;
-        padding: 65px 10px;
-        /* border: 1px solid black; */
+        padding: 50px 10px;
     }
 
     .second-section .sec-section-content .sec-content .noted .left-title {
@@ -230,5 +237,45 @@
         width: 34px;
         height: 34px;
         font-size: 1.2rem;
+    }
+}
+
+/* Horizontal Section Responsive */
+@media (max-width: 768px) {
+    .horizontal-section {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .horizontal-section .article-card {
+        flex: 0 0 240px;
+    }
+    
+    .horizontal-section .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .horizontal-section .card-desc {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .horizontal-section .article-card {
+        flex: 0 0 220px;
     }
 }

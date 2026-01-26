@@ -10,7 +10,8 @@ html {
 
 body {
     font-family: "IBM Plex Sans Arabic", sans-serif;
-    background-color: var(--bg-main)
+    background-color: var(--bg-main);
+    overflow-x: hidden;
 }
 
 a {
